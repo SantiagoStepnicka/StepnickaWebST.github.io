@@ -2,9 +2,10 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(280deg,#154360,#5dade2);
-    height: 500vh;
-    background-repeat:repeat;
+    background: linear-gradient(180deg, black,#312f2f);
+    height: 75vh;
+    background-repeat:no-repeat;
+    background-color: #312f2f;
 }
 
 .Titulo{
@@ -14,7 +15,7 @@ body{
     transform: translate(-50%,-350%);
     width: 400px;
     text-align: center;
-    background: gainsboro;
+    background: gray;
     border-radius: 10px;
     border-color: black;
 }   
