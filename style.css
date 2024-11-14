@@ -2,34 +2,45 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, black,#312f2f);
-    height: 75vh;
-    background-repeat:no-repeat;
-    background-color: #312f2f;
+    background-color: rgb(31, 109, 133);
+    max-width: 500px;
+    max-height: 500px;
 }
 
+
 .Titulo{
+    box-shadow: 0px 0px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-350%);
-    width: 400px;
+    width: 350px;
     text-align: center;
     background: gray;
     border-radius: 10px;
     border-color: black;
+    animation-name: change-color;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }   
-.Noticias{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-70%);
-    text-align: center;
-    background: linear-gradient(150deg, #ec7063,#78281f);
-    border-radius: 10px;
-    border-top-style: groove;
-    border-bottom-style: groove;
-    border-color: black;
+@keyframes change-color{
+    0%{
+        color: black;
+        background: lightblue;
+        box-shadow: 0px 0px 10px lightblue;
+    }
+    50%{
+        color: lightblue;
+        background: blue;
+        box-shadow: 0px 0px 10px blue;
+    }    
+    100%{
+        
+        color: black;
+        background: lightblue;
+        box-shadow: 0px 0px 10px lightblue;
+    }
 }
 .Links{
     text-align: center;
@@ -38,20 +49,22 @@ body{
     font-size: 16px;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(90deg,lightblue,white);
+    background: linear-gradient(90deg,blue,lightblue);
     position: absolute;
+    box-shadow: 0px 0px 10px blue;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, -250%);
     border-radius: 10px;
     width: 50%;
     height: 10%;
+    text-shadow: 0px 0px 20px white;
 }
-.Videos{
+.GD{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-150%,60%);
+    transform: translate(-160%,-20%);
     text-align: center;
     background: linear-gradient(45deg, orange, red);
     border-radius: 10px;
@@ -60,13 +73,15 @@ body{
     border-color: white;
     width: 400px;
     height: 320px;
+    box-shadow: 0px 0px 10px;
 }
 
 .Minecraft{
+    box-shadow: 0px 0px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(60%,-50%);
+    transform: translate(-50%,-10%);
     text-align: center;
     background: linear-gradient(-45deg,yellow, orange);
     border-radius: 10px;
@@ -74,5 +89,19 @@ body{
     text-decoration: underline, white;
     border-color: white;
     width: 400px;
-    height: 320px;
+    height: 460px;
+}
+.creador{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(60%,-20%);
+    background: linear-gradient(65deg, red,blue, lightblue);
+    border-radius: 10px;
+    border-color: black;
+    text-align: center;
+    border-style: solid;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0px 0px 10px black;
 }
